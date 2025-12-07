@@ -1,0 +1,69 @@
+.history-container {
+    background: var(--card-bg);
+    padding: 1.5rem;
+    border-radius: 16px;
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 400px;
+    border: 1px solid var(--border-color);
+    margin-top: 1rem;
+}
+
+.history-header {
+    margin-bottom: 1rem;
+    text-align: center;
+}
+
+.history-header h3 {
+    margin: 0;
+    color: var(--secondary-color);
+    font-size: 1.5rem;
+}
+
+.history-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.history-item {
+    display: flex;
+    align-items: center;
+    padding: 1rem;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+    transition: background 0.2s;
+}
+
+.history-item:last-child {
+    border-bottom: none;
+}
+
+.history-item.current-day {
+    background: rgba(99, 102, 241, 0.1);
+    /* Primary color tint */
+    border-left: 4px solid var(--primary-color);
+}
+
+.history-item.filled .history-value {
+    color: var(--accent-color);
+    font-weight: 600;
+}
+
+.day-label {
+    color: #94a3b8;
+    font-weight: 600;
+    width: 3rem;
+    text-transform: uppercase;
+    font-size: 0.9rem;
+}
+
+.history-value {
+    flex: 1;
+    text-align: right;
+    color: var(--text-color);
+    font-size: 1.1rem;
+}
+
+.placeholder {
+    color: rgba(255, 255, 255, 0.2);
+}
